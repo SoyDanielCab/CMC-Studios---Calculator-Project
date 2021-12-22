@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Scientific Calculator</title>
-        <link rel="stylesheet" href="./styles/style.css">
-        <link rel="stylesheet" href="./styles/mobile/mobile.css" media="screen and (max-width: 430px)">
+        <link rel="stylesheet" href="./styles/scientific.css">
+        <link rel="stylesheet" href="./styles/mobile/scientific_mobile.css" media="screen and (max-width: 430px)">
         <link rel="shortcut icon" href="./assets/calculadora (1).png">
 
     </head>
@@ -15,12 +15,12 @@
         <div class="container">
             <form name="Calculadora">
 
-                <div> <!-- Menu desplegable -->
+                <div> 
                     <ul class="menu"> 
                         <li ><a href="#"> <img src="./assets/menu.svg" alt="" class="list_img"> </a>
                             <ul id="smnu">
-                                <li class="main" ><a href="./index.html"> Standar </a></li>
-                                <li class="not"><a href="./Cientifica.html"> Scientfic </a></li>
+                                <li class="not" ><a href="./index.html"> Standar </a></li>
+                                <li class="main"><a href="./Cientifica.html"> Scientfic </a></li>
                                 <li class="not"><a href=""> Programing  ></a>
 
                                     <ul id="smnu">
@@ -30,49 +30,53 @@
                                         
                                     </ul>
                                 
-                                </li>
+                                </li> 
                                 <li class="not"><a href="./assets/Aplicaciones de los diodos.pdf"> Manual </a></li>
 
                             </ul>
                         </li>
                     </ul>
                 </div>
-        
-                
+           
+
                 <input type="text" name="txtboxnros" value="0" disabled>
-    
-                
+
                 <div class="buttons"> <!-- Primer Columna -->
+                    <input class="a" type="button" value=" √" onclick="raiz()">
+                    <input class="a" type="button" value="^" onclick="ingresaoperacion('**')">
+                    <input class="a" type="button" value="log" onclick="log()">
+                    <input class="a" type="button" value="tan" onclick="tan()">
+                </div>
+                
+                <div class="buttons"> <!-- Segunda Columna -->
                     <input class="a" id="" type="button" value="AC" onclick="limpiar()">
                     <input class="a" id="" type="button" value="DEL" onclick="atras()">
                     <input class="a" id="porcentaje" type="button" value="%" onclick="ingresaoperacion(this.value)">
-                    <input class="a" id="divicion" type="button" value="/" onclick="ingresaoperacion(this.value)">    
+                    <input class="a" id="divicion" type="button" value="/" onclick="ingresaoperacion(this.value)">
                 </div>
 
-                <div class="buttons a"> <!-- Segunda Columna -->
+                <div class="buttons a"> <!-- Tercera Columna -->
                     <input type="button" value="7" onclick="ingresarnumero(this.value)">
                     <input type="button" value="8" onclick="ingresarnumero(this.value)">
                     <input type="button" value="9" onclick="ingresarnumero(this.value)">
                     <input class="a" type="button" value="*" onclick="ingresaoperacion(this.value)">
-                   
-                   
                 </div>
 
-                <div class="buttons a"> <!-- Tercer Columna -->
+                <div class="buttons a"> <!-- Cuarta Columna -->
                     <input type="button" value="4" onclick="ingresarnumero(this.value)">
                     <input type="button" value="5" onclick="ingresarnumero(this.value)">
                     <input type="button" value="6" onclick="ingresarnumero(this.value)">
-                    <input class="a" type="button" value="-" onclick="ingresaoperacion(this.value)">   
+                    <input class="a" type="button" value="-" onclick="ingresaoperacion(this.value)">
                 </div>
                 
-                <div class="buttons a"> <!-- Cuarta Columna -->
+                <div class="buttons a"> <!-- Quinta Columna -->
                     <input type="button" value="1" onclick="ingresarnumero(this.value)">
                     <input type="button" value="2" onclick="ingresarnumero(this.value)">
                     <input type="button" value="3" onclick="ingresarnumero(this.value)">
                     <input class="a" type="button" value="+" onclick="ingresaoperacion(this.value)">
                 </div>
 
-                <div class="buttons a"> <!-- Quinta Columna -->
+                <div class="buttons a"> <!-- Sexta Columna -->
                     <input type="button" value="0" onclick="ingresarnumero(this.value)">
                     <input type="button" value="00" onclick="ingresarnumero(this.value)">
                     <input type="button" value="." onclick="ingresarnumero(this.value)">
@@ -80,11 +84,8 @@
                 </div>
             </form>    
         </div>
-
-        <script src="./scripts/script.js"></script>
+        
+        <script src="./scripts/Cientifica.js"></script>
         
     </body>
 </html>
-
-
-

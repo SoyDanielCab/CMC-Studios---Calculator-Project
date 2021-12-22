@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programing Calculator - Binary</title>
+    <link rel="stylesheet" href="./styles/Bin.css">
+    <link rel="stylesheet" href="./styles/mobile/binary_mobile.css" media="screen and (max-width: 430px)">
+    <link rel="shortcut icon" href="./assets/calculadora (1).png">
+
+    </head>
+    <body  >
+
+        <div class="container">
+            <form action="#" name="Calculadora">
+                             
+                <div> <!-- Menu desplegable -->
+                    <ul class="menu"> 
+                        <li ><a href="#"> <img src="./assets/menu.svg" alt="" class="list_img"> </a>
+                            <ul id="smnu">
+                                <li class="not" ><a href="./index.html"> Standar </a></li>
+                                <li class="not"><a href="./Cientifica.html"> Scientfic </a></li>
+                                <li class="main"><a href=""> Programing  ></a>
+
+                                    <ul id="smnu">
+                                        <li class="main" ><a href="./Binaria.html"> Binary </a></li>
+                                        <li class="not"><a href="./Oct.html"> Octal </a></li>
+                                        <li class="not"><a href="./Hex.html"> Hex </a></li>
+                                        
+                                    </ul>
+                                
+                                </li> 
+                                <li class="not"><a href="./assets/Aplicaciones de los diodos.pdf"> Manual </a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <input type="text" name="txtboxnros" value="0" disabled>
+
+                <div class="buttons"> <!-- Primer Columna -->
+                    <input class="a" type="button" value="AC" value="AC" onclick="limpiar()">
+                    <input class="a" type="button" value="DEL" value="DEL" onclick="atras()">
+                    
+                    <a href="./Binaria.html">
+                        <input class="a" type="button" value="Op.">
+                    </a>
+                
+                    <a href="./Binaria2.html">
+                        <input class="a btn1" type="button" value="Con.">
+                    </a>
+            
+                </div>
+
+                <div class="buttons a"> <!-- Segunda Columna -->
+                    <input class="bin" type="button" value="7" >
+                    <input class="bin" type="button" value="8">
+                    <input class="bin" type="button" value="9">
+                    <input class="a bin"   type="button" value="*" onclick="ingresaoperacion(this.value)">
+                </div>
+
+                <div class="buttons a"> <!-- Tercera Columna -->
+                    <input class="bin" type="button" value="4">
+                    <input class="bin" type="button" value="5">
+                    <input class="bin" type="button" value="6">
+                    <input class="a bin"   type="button" value="-" onclick="ingresaoperacion(this.value)">
+                </div>
+
+                <div class="buttons a"> <!-- Cuarta Columna -->
+                    <input type="button" value="1" onclick="ingresarnumero(this.value)">
+                    <input class="bin" type="button" value="2">
+                    <input class="bin" type="button" value="3">
+                    <input class="a bin"   type="button" value="+" onclick="ingresaoperacion(this.value)">
+                </div>
+
+                <div class="buttons"> <!-- Quienta Columna -->
+                    <input type="button" value="0"  onclick="ingresarnumero(this.value)">
+                    <input type="button" value="00" onclick="ingresarnumero(this.value)">
+                    <input class="bin" type="button" value=".">
+                    <input class="igual" type="button" value="=" onclick="resultado()">
+                </div>
+            </form>    
+        </div>
+
+        <script src="./scripts/Programador/Binarias/bin2.js"></script>
+        
+    </body>
+</html>

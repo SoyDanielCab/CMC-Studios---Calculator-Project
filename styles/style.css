@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#1a2980,#26d0ce);
+}
+
+/*///////////////////////////////////////// Caja de Tetxto ////////////////////////////////////////////*/
+
+.container{  
+    width: 360px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #203050;
+    box-shadow: -3px -3px 7px #463e3e73, 3px 3px 5px rgba(73, 89, 117, 0.288);
+}
+
+.container input[type="text"]{
+    width: 100%;
+    height: 80%;
+    border: none;
+    color: #fff;
+    height: 100px;
+    margin: 0 3px;
+    outline: none;
+    font-size: 30px;
+    text-align: right;
+    margin-left: -30px;
+    background: transparent;
+}
+
+/*//////////////////////////////////////// Estilos de los botones /////////////////////////////////////////////*/
+
+.container input[type="button"]{
+    width: calc(100% / 4 - 5px );
+    border: none;
+    height: 50px;
+    outline: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 15px;
+    color: #dae5e6;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    background-color: #203050;
+}
+
+.container input[type="button"]:hover{
+    color: black;
+    background: #03d1a0;
+}
+
+div .buttons .a{
+    background: #384b70;
+}
+
+div .buttons .igual{
+    background-color: #03d1a0;
+}
+
+#icon{
+    width: 20px;
+    height: 40px;
+    font-size: 20px;
+}
+
+#icon:hover{
+    background: #203050;
+    color: #26d0ce;
+}
+
+/*///////////////////////////////////////// Menu Desplegable ////////////////////////////////////////////*/
+
+
+ul, ol {
+    list-style:none;
+}
+
+.menu > li {
+    float:left;
+}
+
+.menu li a {
+    display:block;
+    color:#03d1a0;
+    border-radius: 50px;
+    padding:10px 12px;
+    text-decoration:none;
+    transition: all 0.3s ease;
+    border: #03d1a0 solid 2px;
+}
+
+.main{
+    background-color: #384b70;
+    border-radius: 50px;
+}
+
+.not{
+    background: #203050;
+}
+
+.menu li a:hover {
+    color: #dae5e6;
+    background-color:#384b70;
+}
+
+.menu li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.menu li:hover  ul {
+    display:block;
+}
+
+.menu li ul li {
+    position:relative;
+    border-radius: 50px;
+}
+
+/*Menu binario*/
+.container .menu li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+  .menu li:hover > ul {
+    display:block;
+}
+
+.menu li ul li {
+    position:relative;
+}
+
+.menu li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

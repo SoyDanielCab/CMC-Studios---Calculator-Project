@@ -17,6 +17,13 @@ body{
 
 /*///////////////////////////////////////// Caja de Tetxto ////////////////////////////////////////////*/
 
+.indicador{
+    display: flex;
+    color: #03d1a0;
+    font-size: 20px;
+    justify-content: right;
+}
+
 .container{  
     width: 360px;
     padding: 15px;

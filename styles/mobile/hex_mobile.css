@@ -13,6 +13,10 @@
         background: #203050;
     }
 
+    .container{  
+        box-shadow: none;
+    }
+    
 
     .container input[type="text"]{
         width: 100%;
